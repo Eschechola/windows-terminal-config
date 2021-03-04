@@ -1,0 +1,52 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "copyOnSelect": false,
+
+    "copyFormatting": false,
+    "profiles":
+    {
+        "defaults":
+        {
+            "fontFace": "Consolas",
+            "fontSize" : 12
+        },
+        "list":
+        [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false,
+                "backgroundImage": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/32113571-4681-400c-9679-5b4d672dfa02/dcvd9ll-011c762f-9942-4de4-9cc8-64bdaf696e51.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzIxMTM1NzEtNDY4MS00MDBjLTk2NzktNWI0ZDY3MmRmYTAyXC9kY3ZkOWxsLTAxMWM3NjJmLTk5NDItNGRlNC05Y2M4LTY0YmRhZjY5NmU1MS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.i9knDtoHxtHVpsvNOLNXXY-s7jcW5c-wWtPZX09Ev_0",
+                "backgroundImageOpacity": 0.15,
+                "backgroundImageAlignment": "top",
+                "backgroundImageStretchMode": "fill"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Prompt de comando",
+                "commandline": "cmd.exe",
+                "hidden": true
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+    "schemes": [],
+    "actions":
+    [
+        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
+        { "command": "paste", "keys": "ctrl+v" },
+        { "command": "find", "keys": "ctrl+shift+f" },
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
+        { "command": {"action": "sendInput", "input": "cd C:/Users/Lucas/Desktop\r clear\r"}, "keys": "ctrl+d" },
+        { "command": {"action": "sendInput", "input": "cd C:/Users/Lucas/Desktop/Github\r"}, "keys": "ctrl+g" },
+        { "command": {"action": "sendInput", "input": "start .\r"}, "keys": "ctrl+o" }
+    ]
+}
