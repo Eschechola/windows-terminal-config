@@ -47,6 +47,7 @@
         { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
         { "command": {"action": "sendInput", "input": "cd C:/Users/Lucas/Desktop\r clear\r"}, "keys": "ctrl+d" },
         { "command": {"action": "sendInput", "input": "cd C:/Users/Lucas/Desktop/Github\r"}, "keys": "ctrl+g" },
+        { "command": {"action": "sendInput", "input": "clear\r"}, "keys": "ctrl+x" },
         { "command": {"action": "sendInput", "input": "start .\r"}, "keys": "ctrl+o" }
     ]
 }
